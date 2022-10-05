@@ -1,0 +1,27 @@
+<Attack animation: 8>
+<DragonBone Settings>
+Battler: DwarfDrill
+Scalex: -0.6
+Scaley: 0.6
+
+Ani Wait: Idle
+Ani Walk: Idle
+Ani Attack: Attack
+Ani Swing: Attack
+Ani Thrust: Attack
+Ani Missile: Attack
+Ani Skill: Attack
+Ani Chant: Attack
+Ani Spell: Attack
+Ani Item: Attack
+Ani Guard: Idle
+Ani Evade: Idle
+Ani Damage: Damage
+Ani Abnormal: Idle Weak
+Ani Sleep: Idle Weak
+Ani Dying: Idle Weak
+Ani Victory: Idle
+Ani Escape: Idle
+
+Replace Sprite
+</DragonBone Settings>

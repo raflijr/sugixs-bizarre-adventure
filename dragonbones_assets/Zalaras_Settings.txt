@@ -1,0 +1,30 @@
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+//-- Zalaras-- Enemy Settings (copy any enemy as a base)
+---------------------
+<Attack animation: 7>
+<DragonBone Settings>
+Battler: Zalaras
+Scalex: -0.7
+Scaley: 0.7
+
+Ani Attack: Attack C
+Ani Walk: Idle
+Ani Damage: Damage
+Ani Skill: Attack D
+Ani Spell: Skill Magic A
+Ani Missile: Attack D
+Ani Thrust: Attack A
+Ani Swing: Attack B
+Ani Item: Attack C
+Ani Victory: Idle
+Ani Evade: Evasion
+Ani Dying: Idle Weak
+Ani Abnormal: Idle Weak
+Ani Sleep: Idle Weak
+
+Replace Sprite
+</DragonBone Settings>
+
+--------------------------
+'Skill Magic B' motion also available.
+

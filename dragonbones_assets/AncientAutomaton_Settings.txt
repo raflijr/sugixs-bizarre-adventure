@@ -1,0 +1,134 @@
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+//-- AncientAutomaton -- Animations
+---------------------
+Idle, IdleWeak, Attack, Skill, Skill2, Ultimate, Damage
+---------------------
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+//-- AncientAutomaton -- Enemy Settings
+---------------------<DragonBone Height: 310>
+<No Breathing>
+<DragonBone Settings>
+Battler: AncientAutomaton
+Scalex: -1
+Scaley: 1
+
+Ani Wait: Idle
+Ani Walk: Idle
+Ani Attack: Attack
+Ani Swing: Attack
+Ani Thrust: Skill
+Ani Missile: Skill2
+Ani Skill: Ultimate
+Ani Chant: Skill2
+Ani Spell: Skill2
+Ani Item: Idle
+Ani Guard: Idle
+Ani Evade: Idle
+Ani Damage: Damage
+Ani Abnormal: IdleWeak
+Ani Sleep: IdleWeak
+Ani Victory: Idle
+Ani Escape: IdleWeak
+Ani Dead: IdleWeak
+
+Replace Sprite
+</DragonBone Settings>
+---------------------
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+//-- AncientAutomaton -- Recommended Attack Action Sequence
+(offset requires Action Sequence Pack 2 Version 1.12)
+animation [A] - pierce/physical hit animation (e.g. RTP-Body Slam)
+---------------------
+<target action>
+move user: targets, front, 20, auto offset x -200
+wait: 10
+motion attack: user
+wait: 31
+animation [A]: target
+action effect
+wait: 15
+</target action>
+---------------------
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+//-- AncientAutomaton -- Recommended Skill Action Sequence
+(offset requires Action Sequence Pack 2 Version 1.12)
+animation [A] - pierce animation (e.g. RTP-Pierce Effect)
+---------------------
+<target action>
+move user: targets, front, 20, auto offset x -220
+wait: 18
+motion thrust: user
+wait: 35
+animation [A]: target
+action effect
+wait: 6
+animation [A]: target
+action effect
+wait: 35
+</target action>
+---------------------
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+//-- AncientAutomaton -- Recommended Skill 2 (buff) Action Sequence
+animation [A] - Powerup animation (e.g. RTP-Powerup 1)
+se (sound effect) [A] - Open/Physical sound (e.g. RTP-Open3, 90, 110, 0)
+---------------------
+<target action>
+move user: forward, 48, -10
+motion chant: user
+wait: 26
+se: [A]
+wait: 14
+se: [A]
+animation [A]: user
+action effect
+wait: 20
+wait: 25
+</target action>
+---------------------
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+//-- AncientAutomaton -- Recommended Ultimate Action Sequence
+(offset requires Action Sequence Pack 2 Version 1.12)
+animation [A] - smash/hit animation (e.g. RTP-Earth One 2 (remove first 2 frames, set Earth5 SE to frame 1 and the screen flash to frame 2 with reduced strength))
+animation [B] - pierce/physical hit animation (e.g. RTP-Body Slam)
+animation [C] - slash animation (e.g. RTP-Slash Physical)
+---------------------
+<target action>
+move user: targets, FRONT BASE, 20, auto offset x -160, offset y -50
+wait: 10
+motion skill: user
+wait: 30
+animation [A]: target
+action effect
+move user: targets, FRONT BASE, 10, auto offset x -250, offset y +100
+move target: targets, BASE, 3, auto offset x -15 offset y +100
+face target: forward
+wait: 3
+move target: targets, BASE, 20, auto offset x -5 offset y -350
+face target: forward
+wait: 20
+move target: targets, BASE, 15, auto offset x -15 offset y +25
+face target: forward
+wait: 14
+animation [B]: target
+action effect
+move target: targets, BASE, 25, auto offset x +5 offset y -150
+face target: forward
+wait: 30
+animation [C]: target
+action effect
+wait: 10
+move target: targets, BASE, 15, auto offset x +5 offset y +100
+face target: forward
+wait: 15
+move target: HOME, 12
+face target: forward
+wait: 10
+move user: HOME, 15
+wait: 15
+</target action>
+---------------------

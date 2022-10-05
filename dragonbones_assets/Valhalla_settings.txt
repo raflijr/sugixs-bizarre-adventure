@@ -1,0 +1,27 @@
+<Attack animation: 7>
+<DragonBone Settings>
+Battler: Valhalla
+Scalex: -0.9
+Scaley: 0.9
+
+Ani Wait: Idle
+Ani Walk: Idle
+Ani Attack: AttackB 
+Ani Swing: AttackB
+Ani Thrust: Skill B
+Ani Missile: SkillC
+Ani Skill: AttackB
+Ani Chant: SkillC
+Ani Spell: SkillC
+Ani Item: SkillC
+Ani Guard: Idle
+Ani Evade: Idle
+Ani Damage: Damage
+Ani Abnormal: Idle 
+Ani Sleep: Idle 
+Ani Dying: Damage
+Ani Victory: Idle
+Ani Escape: Idle
+
+Replace Sprite
+</DragonBone Settings>

@@ -1,0 +1,85 @@
+<Attack animation: 7>
+<DragonBone Settings>
+Battler: Isis
+Scalex: -0.8
+Scaley: 0.8
+
+Ani Wait: Idle
+Ani Walk: Idle
+Ani Attack: Attack Slash
+Ani Swing: Attack Slash
+Ani Thrust: Attack Slash
+Ani Missile: Attack Tornado
+Ani Skill: Skill
+Ani Chant: Skill
+Ani Spell: Skill
+Ani Item: Skill
+Ani Guard: Idle
+Ani Evade: Idle
+Ani Damage: Damage
+Ani Abnormal: Idle Weak
+Ani Sleep: Idle Weak
+Ani Dying: Damage
+Ani Victory: Idle
+Ani Escape: Idle
+
+Replace Sprite
+</DragonBone Settings>
+
+-------------------------------------
+Skills
+-------------------------------------
+Regular Attack
+-------------------------------------
+
+<setup action>
+display action
+immortal: targets, true
+</setup action>
+
+<target action>
+move user: targets, front, 15, auto offset x -220
+wait: 6
+motion Attack Slash: user
+wait: 30
+animation 7: target
+action effect
+wait: 15
+</target action>
+
+-------------------------------------
+Wind Spire
+-------------------------------------
+<setup action>
+display action
+immortal: targets, true
+</setup action>
+
+<target action>
+motion Skill: user
+wait: 30
+animation 91: target
+action effect
+wait: 15
+</target action>
+
+-------------------------------------
+Great Tornado
+-------------------------------------
+<setup action>
+display action
+immortal: targets, true
+</setup action>
+
+<target action>
+move user: targets, front, 15, auto offset x -220
+wait: 6
+motion Attack Tornado: user
+wait: 30
+animation 94: target
+action effect
+wait: 15
+action effect
+wait: 15
+action effect
+</target action>
